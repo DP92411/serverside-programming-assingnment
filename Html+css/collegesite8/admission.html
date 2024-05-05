@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adimission</title>
+    <style>
+         *{margin: 0;
+            box-sizing: border-box;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        nav{
+            display: flex;
+            height: 106px;
+            flex-direction: row;
+           justify-content: space-evenly;
+           flex-wrap: wrap;
+          padding: 8px ;
+          background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(163,175,243,1) 0%, rgba(220,182,232,1) 100.2% );
+        }
+        main{
+            display: flex;
+            margin-top: 5%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            /* display: flex; */
+            align-self: center;
+        }
+        
+        .box{
+/* background-color: burlywood; */
+height: 90px;
+width: 90px;
+display: flex;
+justify-content: center;
+align-items: center;
+        }
+           #box1,img{ border-radius: 100px;}
+        a{text-decoration: none;  color: black;}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box" id="box1"><a href="#"><IMG src="ietlogo.png" width="90PX"></IMG></a></div>
+            <div class="box" id="box2"><a href="index.html">HOME</a></div>
+            <div class="box" id="box3"><a href="admission.html">ADDMISION</a></div>
+            <div class="box" id="box4"><a href="acadamics.html">ACADAMICS</a></div>
+            <div class="box" id="box5"><a href="gallery.html">GALLERY</a></div>
+
+    </nav>
+    <main >
+        <H2>FILL THIS FORM TO GET ADMISSION</H2><BR><br>
+        <form action="">
+         <label for="name">Enter your Name : <input type="text" id="name"></label><br><br>
+         <label for="contact">Enter your contact no.:  <input type="number" id="contact"></label><br><br>
+         <label for="email">Enter your Email id:  <input type="email" id="email"></label><br><br>
+         <label for="dob">Enter your DOB :  <input type="date" id="dob"></label><br><br>
+         <label for="scorecard">Upload your scorecard:  <input type="file" id="scorecard"></label><br><br>
+         <textarea name="other" id="others" rows="4" cols="60">Enter other required Details.</textarea><br><br>
+        <input type="submit">
+        </form>
+    </main>   
+</body>
+</html
